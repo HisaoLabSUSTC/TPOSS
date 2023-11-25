@@ -4,7 +4,7 @@ This is the repository for the paper: *Targeted Pareto Optimization for Subset S
 
 ## Dataset
 
-The whole dataset is avaliable at [TPOSS Dataset](https://www.kaggle.com/datasets/guotongwu/tposs-dataset), you can download all the `.m` files and put them into `./data` folder.
+The whole dataset is avaliable at [TPOSS Dataset](https://www.kaggle.com/datasets/guotongwu/tposs-dataset), you can download all the `.mat` files and put them into `./data` folder.
 
 ## Algorithm
 
