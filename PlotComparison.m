@@ -44,7 +44,7 @@ for task = tasks
             h = plot(result(:,2:end)','LineWidth',2);
         end
         set(h,{'LineStyle'},{'-';'--';'-.';':';'-'})
-        legend("POSS","PORSS-O","PORSS-U","SPESS","TPOSS",'Location','best');
+        legend("POSS","PORSS$_o$","PORSS$_u$","SPESS","TPOSS",'Location','best','Interpreter','latex');
         set(gca,'FontSize',20,'YScale','log');
         
         % set the title of the plot to the extracted titleString

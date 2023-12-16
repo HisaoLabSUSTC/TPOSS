@@ -78,10 +78,19 @@ for task = tasks
         title(titleString);
     
         % set the labels for the X and Y axes using xlabel and ylabel
-        xlabel('$\delta$', 'Interpreter', 'latex');
-        ylabel('$\epsilon$', 'Interpreter', 'latex');
-    
+        xlabel('$\delta$', 'Interpreter', 'latex','FontSize',20);
+        ylabel('$\epsilon$', 'Interpreter', 'latex','FontSize',20);
+
+        % set the labels for Z axes
+        if task == "HSS"
+            zlabel('HV', 'Interpreter', 'latex');
+        elseif task == "SR"
+            zlabel('$R^2$', 'Interpreter', 'latex');
+        elseif task == "FS"
+            zlabel('Error Ratio', 'Interpreter', 'latex');
+        end
+        
         % save the figure
-       exportgraphics(gca,"./result/figure/TestParam/"+file+".pdf", "Resolution",300);
+        exportgraphics(gca,"./result/figure/TestParam/"+file+".pdf", "Resolution",300);
     end
 end
